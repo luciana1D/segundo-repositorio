@@ -72,7 +72,6 @@ li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 5px;
     display: inline;
-    border-radius: 7px;
 }
 p{
     color: aliceblue;
@@ -85,13 +84,14 @@ p{
 footer {
     grid-area: pie;
     background-color: black;
+    color: azure;
     margin: 15px;
     padding: 20px;
     font-size: 20px;
 }
 footer img {
     width: 35px;
-    height: 35px;
+    height: 40px;
 }
 main img {
     width: 400px;
@@ -107,6 +107,9 @@ h6 {
     text-align: center;
     padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    color: black;
 }
 .logo {
     margin: 2%;
@@ -133,6 +136,12 @@ h6 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+}
+/*pseudo.clases*/
+a:hover{
+    background-color:blanchedalmond;
+    text-decoration: underline;
+    border-radius: 10px;
 }
 
 /*mobile*/
@@ -163,6 +172,50 @@ h6 {
         width: 30px;
         height: 30px;
     }
+    .footer-flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+@media screen and (orientation: landscape) and (max-width: 926px){
+ main img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid white;
+    }
+
+    li {
+        padding: 6px 20px;
+        margin: 5px;
+        display: inline;
+    }
+
+    div {
+        background-color: rgb(228, 58, 157);
+        margin: 1px;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .logo {
+        margin: 2%;
+        width: 200px;
+    }
+
+    footer {
+        margin: 10px;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+
     .footer-flex {
         display: flex;
         flex-flow: row wrap;
